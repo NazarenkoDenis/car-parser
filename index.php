@@ -9,7 +9,7 @@ require('CarParser.php');
 $carParser = new CarParser;
 
 $startTime = time();
-var_dump($carParser->getPreparedCar('https://www.olx.ua/uk/obyavlenie/hyundai-getz-IDJvrYB.html'));
+var_dump($carParser->getCarData('https://www.olx.ua/uk/obyavlenie/hyundai-getz-IDJvrYB.html'));
 $processTime = time() - $startTime;
 
 echo  'Processed for: ' . $processTime . ' s';
